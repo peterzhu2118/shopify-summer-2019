@@ -1,0 +1,45 @@
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
+
+Style/MixinUsage:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 40
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/BlockLength:
+  Exclude:
+    - db/schema.rb
+  Max: 50
+
+Metrics/ClassLength:
+  Max: 200
+  Exclude:
+    - test/**/*.rb
+
+Metrics/CyclomaticComplexity:
+  Max: 7
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Style/MultilineTernaryOperator:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - db/schema.rb
+    - config/initializers/rails_admin.rb
+
+Style/NumericLiterals:
+  Exclude:
+    - 'db/schema.rb'
