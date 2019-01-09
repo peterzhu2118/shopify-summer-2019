@@ -7,6 +7,7 @@ ruby '2.5.1'
 
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'graphql', '~> 1.8.13'
+gem 'graphql-guard', '~> 1.2.1'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.2'

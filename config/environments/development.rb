@@ -61,3 +61,7 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
+GraphiQL::Rails.config.headers['api-token'] = lambda { |_context|
+  'af5f6ad39d4bfba41c0a0b5b355b02ee65958a0c9adad4d2a70b67d72b8f425c'
+}
