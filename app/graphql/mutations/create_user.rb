@@ -2,7 +2,7 @@
 
 module Mutations
   class CreateUser < Mutations::BaseMutation
-    null true
+    null false
 
     description 'Creates a new user.'
 

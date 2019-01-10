@@ -2,7 +2,7 @@
 
 module Mutations
   class AddToCart < Mutations::BaseMutation
-    null true
+    null false
 
     description 'Adds a product to cart.'
 

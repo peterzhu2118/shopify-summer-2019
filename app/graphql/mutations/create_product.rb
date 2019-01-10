@@ -2,7 +2,7 @@
 
 module Mutations
   class CreateProduct < Mutations::BaseMutation
-    null true
+    null false
 
     description 'Creates a new product.'
 

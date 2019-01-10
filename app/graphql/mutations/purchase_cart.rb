@@ -2,7 +2,7 @@
 
 module Mutations
   class PurchaseCart < Mutations::BaseMutation
-    null true
+    null false
 
     description 'Completes the purchase of the cart.'
 
