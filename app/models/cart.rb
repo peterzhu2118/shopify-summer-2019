@@ -32,7 +32,7 @@ class Cart < ApplicationRecord
         next if product.save
 
         successful_transaction = false
-        errors.add(:product, "#{cart_prod} is out of stock")
+        errors.add(:product, "#{product.title} is out of stock")
         raise ActiveRecord::Rollback, 'product is out of stock'
       end
     end
