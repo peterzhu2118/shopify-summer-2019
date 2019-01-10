@@ -14,6 +14,8 @@ module Mutations
     def resolve(username:)
       user = User.new(username: username)
 
+      context[:skip_guard] = true
+
       if user.save
         {
           user: user,
