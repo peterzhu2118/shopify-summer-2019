@@ -26,6 +26,8 @@ This project is also available hosted, with the GraphQL endpoint available at [h
 
 Authenticate by placing the API token in the headers as `HTTP_API_TOKEN`. For example, to perform an API call as the user `testing` use the following cURL command `curl -H "Api-Token: af5f6ad39d4bfba41c0a0b5b355b02ee65958a0c9adad4d2a70b67d72b8f425c" -X POST https://shopify-challenge.peterzhu.ca/graphql`.
 
+Note: `createUser` is the only GraphQL method that is not protected by authentication (i.e. you can create users without providing an API token).
+
 ## API Documentation
 
 Full documentation can be found [here](https://www.peterzhu.ca/shopify-summer-2019/).
