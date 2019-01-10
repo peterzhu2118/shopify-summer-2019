@@ -7,14 +7,14 @@ This GraphQL API allows users to be created, these users can then create product
 # Setup
 
 0. Install the following dependencies:
-  - Ruby
-  - Ruby on Rails
-  - PostgreSQL
+    - Ruby
+    - Ruby on Rails
+    - PostgreSQL
 1. Install the dependencies using `bundle install`.
 2. Setup the database using `rails db:create` followed by `rails db:migrate`.
-  - Optionally run `rails db:seed` to create the user `testing` with API token `af5f6ad39d4bfba41c0a0b5b355b02ee65958a0c9adad4d2a70b67d72b8f425c`.
+    - Optionally run `rails db:seed` to create the user `testing` with API token `af5f6ad39d4bfba41c0a0b5b355b02ee65958a0c9adad4d2a70b67d72b8f425c`.
 3. Start the server using `rails server`! The GraphQL endpoint will be available at `\graphql`, a GraphiQL IDE is also available in development at `\graphiql`.
-  - Note on the GraphiQL IDE: The header is configured to pass the API token for the `testing` user generated from the seed in the [environment configuration](https://github.com/peterzhu2118/shopify-summer-2019/blob/master/config/environments/development.rb#L72).
+    - Note on the GraphiQL IDE: The header is configured to pass the API token for the `testing` user generated from the seed in the [environment configuration](https://github.com/peterzhu2118/shopify-summer-2019/blob/master/config/environments/development.rb#L72).
 
 # Using the API
 
