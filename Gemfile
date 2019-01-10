@@ -11,6 +11,7 @@ gem 'graphql-guard', '~> 1.2.1'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.2'
+gem 'rollbar'
 gem 'timber', '~> 2.6'
 gem 'uglifier', '>= 1.3.0'
 
