@@ -5,7 +5,7 @@ class GraphqlPolicy
     if type.introspection? || skip_api_token_validation?(type, field)
       ->(_obj, _args, _ctx) { true }
     else
-      ->(_obj, _args, ctx) { !ctx[:current_user].nil? }
+      ->(_obj, _args, ctx) { !ctx[:current_user].nil? || ctx[:skip_guard] }
     end
   end
 
@@ -14,6 +14,6 @@ class GraphqlPolicy
   }.freeze
 
   def self.skip_api_token_validation?(type, field)
-    SKIP_TOKEN_VALIDATION_POLICY[type]&.include? field
+    SKIP_TOKEN_VALIDATION_POLICY[type.metadata[:type_class]]&.include? field
   end
 end
