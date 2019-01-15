@@ -1,6 +1,8 @@
 # Welcome, Shopify!
 
-This is my solution to the summer 2019 Shopify Developer Intern challenge. The GraphQL endpoint of a hosted version is available at [https://shopify-challenge.peterzhu.ca/graphql](https://shopify-challenge.peterzhu.ca/graphql) (the root page just redirects back to this GitHub repo). **NOTE**: Requests to this endpoint should be a POST request.
+This is my solution to the summer 2019 Shopify Developer Intern challenge. The GraphQL endpoint of a hosted version is available at [https://shopify-challenge.peterzhu.ca/graphql](https://shopify-challenge.peterzhu.ca/graphql) (the root page just redirects back to this GitHub repo).
+
+**NOTE**: Requests to the GraphQL endpoint should be a POST request.
 
 This GraphQL API allows users to be created, these users can then create products which other uses can place in their cart and purchase.
 
